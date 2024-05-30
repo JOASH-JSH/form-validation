@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Odin Form Validation</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="sidebar">
+                <div class="logo">
+                    <img src="assets/images/odin-lined.png" alt="odin logo" />
+                    <p>Odin</p>
+                </div>
+                <div class="credit">
+                    <p>Photo by <a href="#">Halie West</a> on <a href="#">Unsplash</a></p>
+                </div>
+            </div>
+
+            <div class="main">
+
+                <!-- form container section 1 -->
+
+                <section class="section section-1">
+                    <p>
+                        This is not a real online service! You know you need something
+                        like this in your life to help you realize your deepest dreams.
+                    </p>
+                    <p>Sign up <em>now</em> to get started.</p>
+                    <p>You <em>know</em> you want to.</p>
+                </section>
+
+                <!-- form container section 2 -->
+
+                <section class="section section-2">
+                    <form action="#" method="post">
+                        <p>Let's do this!</p>
+                        <div class="input-container">
+                            <div>
+                                <label for="first-name">FIRST NAME <span style="color: red;">*</span> </label> <br />
+                                <input type="text" id="first-name" placeholder="Josh" maxlength="20" autocomplete="off" spellcheck="false"/>
+                                <p class="error-p" id="error-msg-fname"></p>
+                            </div>
+                            <div>
+                                <label for="last-name">LAST NAME</label> <br />
+                                <input type="text" id="last-name" placeholder="Odinson" maxlength="20" autocomplete="off" spellcheck="false"/>
+                                <p class="error-p" id="error-msg-lname"></p>
+                            </div>
+                        </div>
+                        <div class="input-container">
+                            <div class="email-container">
+                                <label for="email">EMAIL <span style="color: red;">*</span> </label> <br />
+                                <input type="email" id="email" placeholder="odinsonjosh@email.com" autocomplete="off" spellcheck="false"/>
+                                <p class="error-p" id="error-msg-email"></p>
+                            </div>
+                            <div class="phone-number-container">
+                                <label for="phone-number">PHONE NUMBER</label> <br />
+                                <input type="tel" id="phone-number" autocomplete="off" spellcheck="false"/>
+                                <p class="error-p" id="error-msg-phone-number"></p>
+                            </div>
+                        </div>
+                        <div class="input-container">
+                            <div class="password-container">
+                                <label for="password">PASSWORD <span style="color: red;">*</span> </label> <br />
+                                <input type="password" id="password" autocomplete="off" spellcheck="false"/>
+                                <p class="error-p" id="error-msg-passord"></p>
+                            </div>
+                            <div class="confirm-password-container">
+                                <label for="confirm-password">CONFIRM PASSWORD <span style="color: red;">*</span> </label> <br />
+                                <input type="password" id="confirm-password"autocomplete="off" spellcheck="false"/>
+                                <p class="error-p" id="error-msg-confirm-password"></p>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+
+                <!-- form container section 3 -->
+
+                <section class="section section-3">
+                    <button type="submit" id="create-account-btn">Create Account</button>
+                    <p>Already have an account? <a href="#">Log in</a></p>
+                </section>
+            </div>
+        </div>
+    </body>
+</html>
